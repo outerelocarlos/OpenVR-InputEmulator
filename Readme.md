@@ -1,5 +1,13 @@
 ![language](https://img.shields.io/badge/Language-C%2B%2B11-green.svg)  ![dependencies](https://img.shields.io/badge/Dependencies-Boost%201.63-green.svg)  ![license_gpl3](https://img.shields.io/badge/License-GPL%203.0-green.svg)
 
+## Fork Notes
+
+This is a forked project providing an updated _driver_00vrinputemulator.dll_ so that the software works with recent SteamVR versions.
+
+The .nsi and .exe installers have been modified to make use of the updated driver, which can also be manually downloaded from [this link](https://github.com/matzman666/OpenVR-InputEmulator/files/6119290/driver_00vrinputemulator.zip).
+
+The original project can be found [here](https://github.com/matzman666/OpenVR-InputEmulator).
+
 # OpenVR-InputEmulator
 
 An OpenVR driver that allows to create virtual controllers, emulate controller input, enable motion compensation, manipulate poses of existing controllers and remap buttons. Includes a dashboard to configure some settings directly in VR, a command line client for more advanced settings, and a client-side library to support development of third-party applications.

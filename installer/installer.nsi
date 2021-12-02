@@ -131,7 +131,10 @@ Section "Install" SecInstall
 	File "${DRIVER_BASEDIR}\resources\sounds\audiocue.wav"
 	File "${DRIVER_BASEDIR}\resources\sounds\License.txt"
 	SetOutPath "$vrRuntimePath\drivers\00vrinputemulator\bin\win64"
-	File "${DRIVER_BASEDIR}\bin\x64\driver_00vrinputemulator.dll"
+	;File "${DRIVER_BASEDIR}\bin\x64\driver_00vrinputemulator.dll"
+	
+	;Custom driver_00vrinputemulator.dll which works with recent SteamVR versions
+	File "${DRIVER_BASEDIR}\driver_00vrinputemulator.dll"
 	
 	; Install the vrmanifest
 	nsExec::ExecToLog '"$INSTDIR\OpenVR-InputEmulatorOverlay.exe" -installmanifest'
